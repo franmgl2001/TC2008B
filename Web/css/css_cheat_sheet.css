@@ -111,11 +111,12 @@ br {
     background-color: red;
 }
 
-ul{
-    list-style: square;
+ul {
+    list-style:square;
     font-size: 1.2em;
-}
 
+  }
+  
 #padding{
     padding: 50px;
     background-color: red;
