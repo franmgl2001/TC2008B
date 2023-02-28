@@ -1,0 +1,142 @@
+H1{
+    padding: 20px;
+    text-align: center;
+}
+H2{
+    margin-left: 10px;
+}
+br {
+    height: 10px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+    background-color: black;
+}
+
+#border{
+    border: 20px;
+    background-color:red;
+    border-color: blue;
+    border-style: solid;
+}
+
+#bottom_border{
+    border:0px;
+    border-bottom: 20px;
+    background-color: red;
+    border-color: blue;
+    border-style: solid;
+}
+
+#top_border{
+    border:0px;
+    border-top: 20px;
+    background-color: red;
+    border-color: blue;
+    border-style: solid;
+}
+
+#left_border{
+    border:0px;
+    border-left: 50px;
+    background-color: red;
+    border-color: blue;
+    border-style: solid;
+}
+
+#right_border{
+    border:0px;
+    border-right: 50px;
+    background-color: red;
+    border-color: blue;
+    border-style: solid;
+}
+
+#border_radius{
+    padding: 30px;
+    border: 5px;
+    background-color: red;
+    border-color: blue;
+    border-style: solid;
+    border-radius: 30%;
+}
+
+#background_image{
+    color: darkgreen;
+    background-image: url('../Imagenes/warner.jpg');
+    height: 120px;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+}
+
+#font_family{
+    font-family: 'Arial';
+    padding: 20px;
+    font-size: large;
+}
+#color{
+    color: rebeccapurple;
+    padding: 20px;
+
+    font-size: large;
+    font-weight: bold;
+}
+#font{
+    padding: 20px;
+    font-size: small;
+    font-weight: bold;
+    font-style: oblique;
+    font-family: 'Arial';
+}
+
+#font_style{
+    padding : 20px;
+    font-style: italic;
+}
+#font_weight{
+    padding : 20px;
+    font-weight: bold;
+}
+
+#width_height{
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+
+#margin{
+    padding: 20px;
+    margin: 50px;
+    background-color: red;
+}
+
+ul{
+    list-style: square;
+    font-size: 1.2em;
+}
+
+#padding{
+    padding: 50px;
+    background-color: red;
+}
+
+#overflow{
+    padding: 20px;
+    width: 200px;
+    height: 200px;
+    overflow: scroll;
+}
+
+#position{
+    position: relative;
+    left: 300px;
+    padding: 10px;
+}
+#display{
+    display: flex;
+}
+
+#filter{
+    filter: blur(1px);
+}
