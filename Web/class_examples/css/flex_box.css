@@ -1,0 +1,23 @@
+*{box-sizing: border-box;
+}
+
+/* body, html{
+    margin: 0;
+    padding: 0;
+} */
+
+div {
+    border: 1px solid black;
+}
+
+.flex-item{
+    margin: 5%;
+    flex-shrink: 1;
+    flex-grow: 1;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
