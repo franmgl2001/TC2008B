@@ -1,4 +1,9 @@
 /*
+Function: Apply the transformations to the car and wheels, so that the car moves 
+in a straight line with the wheels and rotate this ones.
+
+Francisco Martinez Gallardo Lascurain A01782250
+15/11/2023
 
 */
 
@@ -77,6 +82,7 @@ public class ApplyTransforms : MonoBehaviour
 
 
     void DoTransform(){
+        // Calculate the angle based on vectors
         float angleRadians = Mathf.Atan2(displacement.z, displacement.x);
         float angle = angleRadians * Mathf.Rad2Deg-90;
         // Create a translation matrix
@@ -88,7 +94,7 @@ public class ApplyTransforms : MonoBehaviour
         // Create a rotation matrix
         Matrix4x4 rotate = HW_Transforms.RotateMat(angle, rotationAxis );
         // Create a composite matrix
-        Matrix4x4 composite =rotate* move;
+        Matrix4x4 composite = move * rotate;
 
         // Update new vertices
         for (int i=0; i<newVertices.Length; i++)
@@ -128,28 +134,6 @@ public class ApplyTransforms : MonoBehaviour
             meshWheels[i].vertices = newVerticesWheels[i];
             meshWheels[i].RecalculateNormals();
         }
-
-        /*
-
-        Matrix4x4 posicionIAtras = HW_Transforms.TranslationMat(0.757f, 0.367f, -1.23f);
-
-        Matrix4x4 rotateW1=HW_Transforms.RotateMat(wheelAngle * Time.time, wheelAxis );
-        // Create a scaling matrix
-        Matrix4x4 scaleMatrix = HW_Transforms.ScaleMat(scaleFactor, scaleFactor, scaleFactor);
-        Debug.Log("scaleMatrix: " + newVertices1.Length);
-        // Do the same for the wheel
-        for (int i=0; i<newVertices1.Length; i++)
-        {
-            Vector4 temp = new Vector4(baseVertices1[i].x, baseVertices1[i].y, baseVertices1[i].z, 1);
-
-            newVertices1[i] = composite * posicionIAtras * rotateW1 * scaleMatrix * temp ;
-        }
-
-  
-
-        mesh1.vertices = newVertices1;
-        mesh1.RecalculateNormals();
-        */
     
     }
 }
